@@ -69,4 +69,64 @@
     margin-bottom: 2rem;
 }
 
+.submitButton{
+    background: linear-gradient(80deg, rgba(89, 131, 252, 1) 16%, rgba(169, 41, 136, 1) 100%);
+    color: white; 
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 85%;
+}
+
+@media(min-width: 1024px){
+
+    .authButtons{
+        width: 30%;
+
+    }
+     .submitButton, .inputField{
+        width: 90%;
+    
+    }
+
+    .loginForm, .signInForm{
+        background: white;
+       border-radius: 14px;
+       width: 30%;
+       padding: 5% 0;
+       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+    
+      }
+
+
+
+}
+
+@media(min-width: 1025px){
+    .authButtons{
+        width: 50%;
+
+    }
+     .submitButton, .inputField{
+        width: 90%;
+    
+    }
+
+    .loginForm, .signInForm{
+
+        border-radius: 14px;
+        width: 50%;
+        padding: 5% 0;
+        background: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     
+     
+       }
+
+ 
+}
 

@@ -1,17 +1,18 @@
 import styles from "./AuthPage.module.css";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import {useLocation} from 'react-router-dom'
+import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function AuthPage() {
   const [loginActive, setLoginActive] = useState(undefined);
   const location = useLocation();
-  const { mode } = location.state || {}; 
+  const { mode } = location.state || {};
 
-  useEffect(()=>{
+  useEffect(() => {
     if (mode === "login") setLoginActive(true);
     else if (mode === "signup") setLoginActive(false);
-  },[mode])
+  }, [mode]);
 
   return (
     <div className={styles.authPage}>
@@ -45,6 +46,14 @@ export default function AuthPage() {
 }
 
 export function LoginForm() {
+
+    const navigate = useNavigate();
+
+    const handleLogin = () => {
+      // логіка реєстрації тут...
+      navigate("/mainpage"); // ⬅ редирект після успіху
+    };
+
   return (
     <div className={styles.loginForm}>
       <input
@@ -57,14 +66,26 @@ export function LoginForm() {
         placeholder="Enter your password"
         type="password"
       />
-      <button>login</button>
+      <button className={styles.submitButton}  onClick={handleLogin}>login</button>
     </div>
   );
 }
 
 export function SignUpForm() {
+    const navigate = useNavigate();
+
+    const handleSignUp = () => {
+      // логіка реєстрації тут...
+      navigate("/mainpage"); // ⬅ редирект після успіху
+    };
+
   return (
     <div className={styles.signInForm}>
+      <input
+        className={styles.inputField}
+        placeholder="Enter your username"
+        type="text"
+      />
       <input
         className={styles.inputField}
         placeholder="Enter your email"
@@ -75,7 +96,10 @@ export function SignUpForm() {
         placeholder="Enter your password"
         type="password"
       />
-      <button>sign up</button>
+    
+      <button to="mainPage" className={styles.submitButton} onClick={handleSignUp}>
+        sign up
+      </button>
     </div>
   );
 }
