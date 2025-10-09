@@ -1,0 +1,61 @@
+
+*{
+    font-family: sans-serif;
+}
+
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: 7rem;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+
+
+
+
+}
+
+.leftHeader{
+    display: flex;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.7rem;
+    
+}
+
+.headerMenu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: green;
+    padding: 5%;
+    gap: 1rem;
+
+
+}
+
+
+.headerMenuElement{
+    list-style: none;
+}
+
+.buttons{
+    padding: 1rem;
+    border: 1px solid black;
+    background: white;
+    border-radius: 12px;
+}
