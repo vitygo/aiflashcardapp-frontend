@@ -4,17 +4,17 @@ import {useState} from 'react'
 
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(true)
+  const [menuOpen, setMenuOpen] = useState(false)
 
   return (
     <header className={styles.header}>
       <div className={styles.leftHeader}>
         <div className={styles.logo}>FlashLogo</div>
         <ul className={`${styles.headerMenu} ${menuOpen? styles.openMenu : ""}`}>
-          <li className={styles.headerMenuElement}>data</li>
-          <li className={styles.headerMenuElement}>data</li>
-          <li className={styles.headerMenuElement}>data</li>
-          <li className={styles.headerMenuElement}>data</li>
+          <li className={styles.headerMenuElement}>Product</li>
+          <li className={styles.headerMenuElement}>Product</li>
+          <li className={styles.headerMenuElement}>Product</li>
+          <li className={styles.headerMenuElement}>Product</li>
         </ul>
       </div>
       <div className={styles.rightHeader}>
