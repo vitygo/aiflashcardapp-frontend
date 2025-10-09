@@ -1,0 +1,72 @@
+
+
+.authPage{
+    margin-top: 10rem;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.authButtons{
+    background: rgba(0, 0, 0, 0.223);
+    width: 85%;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    padding: 0.1rem 0.4rem;
+    margin-bottom: 2rem;
+    
+
+}
+.authOptionButton{
+    height: 80%;
+    color: rgba(74, 74, 74, 0.455);
+    width: 50%;
+    transition: 0.3s ease;
+    
+}
+
+.authOptionButton.activeButton{
+    background: white;
+    border-radius: 12px;
+    color: black;
+
+  }
+
+.loginForm, .signInForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    gap: 1rem;
+
+
+  }
+
+.inputField{
+    background: rgba(0, 0, 0, 0.223);
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    padding: 0.1rem 0.4rem;
+    border: none;
+    width: 85%;
+    outline: none;
+
+}
+
+.inputWindow{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.authSubtitle{
+    margin-bottom: 2rem;
+}
+
+
