@@ -1,18 +1,19 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
-    font-family: sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 
 .header{
     position: fixed;
     width: 100%;
-    height: 7rem;
-    background: red;
+    height: 5rem;
+    background: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2%;
+    
 
 
 
@@ -21,31 +22,45 @@
 
 .leftHeader{
     display: flex;
+  
 
+}
+
+.rightHeader{
+    display: flex;
+    gap: 0.5rem;
 }
 
 .logo{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
+ 
     
 }
 
 .headerMenu{
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     top: 100%;
     left: 0;
     width: 100%;
-    background: green;
+    background: rgb(255, 255, 255);
     padding: 5%;
     gap: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.258);
+    height: 100vh;
+    
 
 
+}
+
+.headerMenu.openMenu{
+    display: flex;
 }
 
 
@@ -53,9 +68,49 @@
     list-style: none;
 }
 
-.buttons{
+button{
+    border: none;
+    background: none;
+    font-weight: bold;
+    
+}
+
+.headerButton{
     padding: 1rem;
-    border: 1px solid black;
+}
+
+.signUpButton{
+    background: linear-gradient(80deg, rgba(89, 131, 252, 1) 16%, rgba(169, 41, 136, 1) 100%);
+    color: white;
+    height: 90%;
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.buttons{
+    padding: 0.2rem;
+    border: 1px solid rgba(0, 0, 0, 0.258);
     background: white;
     border-radius: 12px;
+    display: flex;
+    align-items: center;
+
+}
+
+.hamburgerMenu{
+    background: white;
+    color: rgb(0, 0, 0);
+    height: 90%;
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.258);
+
 }
