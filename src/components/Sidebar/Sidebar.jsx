@@ -22,6 +22,7 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
         <button className={styles.sidebarBtn} onClick={() => setSidebarOpen((prev) => !prev)}>
           <IoMenu size="30px" />
         </button>
+        
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import styles from "./Dashboard.module.css";
 import { useOutletContext } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
+import { FaSearch } from "react-icons/fa";
 
 export default function Dashboard() {
   const { sidebarOpen, setSidebarOpen } = useOutletContext();
@@ -8,11 +9,22 @@ export default function Dashboard() {
   return (
     <div className={styles.dashboard}>
       <div className={styles.header}>
-        <button className={`${styles.sidebarBtn} ${sidebarOpen ? styles.closed : ''}`} onClick={() => setSidebarOpen((prev) => !prev)}>
+        <button
+          className={`${styles.sidebarBtn} ${sidebarOpen ? styles.closed : ""}`}
+          onClick={() => setSidebarOpen((prev) => !prev)}
+        >
           <IoMenu size="30px" />
         </button>
+        <div className={styles.searchInputContainer}>
+          <input
+            className={styles.searchInput}
+            type="text"
+            placeholder="Search your set"
+          />
+          <FaSearch size="26px" />
+        </div>
       </div>
-      dashboard
+      <div className={styles.dashboardBody}></div>
     </div>
   );
 }
