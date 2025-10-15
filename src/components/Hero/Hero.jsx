@@ -16,33 +16,7 @@ export default function Hero() {
         start now
       </Link>
       <p className={styles.heroButtonSubTitle}>Start free. No card needed.</p>
-      <div className={styles.DemoVideoContainer}>
-        <CustomVideoPlayer />
-      </div>
-    </div>
-  );
-}
-
-export function CustomVideoPlayer() {
-  const baseName = "/random-words/";
-  const videoFileName = "demovideo.mp4"; 
-  const videoPath = "./demovideotest.mp4";
-
-  return (
-    <div className={styles.videoContainer}>
-
-      <video
-        className={styles.customVideo}
-        width="100%" 
-        height="auto"
-        controls
-        
-      >
-       
-        <source src={videoPath} type="video/mp4" />
-        
-        Your browser does not support the video tag.
-      </video>
+      <div className={styles.DemoVideoContainer}></div>
     </div>
   );
 }
