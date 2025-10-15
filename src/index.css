@@ -3,6 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: #F7F9FC;
+
+  background-image:
+      radial-gradient(circle at 20% 80%, rgba(200, 200, 255, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(200, 200, 255, 0.15) 0%, transparent 50%);
+
+}
 
 a{
   text-decoration: none;

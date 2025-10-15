@@ -1,0 +1,75 @@
+
+.productSection{
+    height: 100vh;
+    margin-top: 5rem;
+    padding: 0px 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+    
+}
+
+.subtitle{
+    color: #9f49ff;
+    text-align: left;
+}
+
+.title{
+    font-size: 1.7rem;
+    text-align: left;
+
+}
+.stepsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    width: 95%;
+    margin-top: 2rem;
+    /* background: white; */
+    border-radius: 20px;
+    padding: 8% 0% 15% 0%;
+    /* border: 7px solid rgba(0, 0, 0, 0.043); */
+
+}
+
+.step{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.stepBlock{
+    position: relative;
+    height: 50px;
+    width: 50px !important;
+    border-radius: 12px;
+    background: #ff3870;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .stepBlock:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%; /* or wherever you want the line */
+    /* transform: translateX(-50%);
+    height: 4rem;
+    width: 3px;
+    background: #ff3870;
+    border-radius: 3px; */
+
+
+
+.stepDescr{
+    color: rgba(0, 0, 0, 0.513);
+    font-size: 1rem;
+}
+

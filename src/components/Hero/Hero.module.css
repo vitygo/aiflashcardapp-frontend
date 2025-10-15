@@ -1,7 +1,6 @@
 .hero{
     margin-top: 10rem;
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,8 +61,31 @@ h1 span{
     color: transparent;
 }
 
+.DemoVideoContainer{
+    /* background: rgba(0, 0, 0, 0.416); */
+    position: relative;
+    border-radius: 0px;
+    margin-top: 2.125rem;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.playButton{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
 
 @media (min-width: 601px){
+    .DemoVideoContainer{
+        height: auto;
+        width: 96%;
+        border-radius: 30px !important;
+    }
+    
+
     .heroTitle{
         font-size: 3rem;
         max-width: 70%;
@@ -92,10 +114,18 @@ h1 span{
         max-width: 70%;
 
     }
+    .DemoVideoContainer{
+        height: 34vh;
+        width: 83%;
+    }
     
 }
 
 @media (min-width: 1025px){
+    .DemoVideoContainer{
+        height: 75vh;
+        width: 83%;
+    }
     .heroTitle{
         font-size: 3.5rem;
         max-width: 70%;
@@ -128,3 +158,17 @@ h1 span{
 
     
 }
+
+.videoContainer {
+    overflow: hidden; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 100%; 
+  }
+  
+
+  .customVideo {
+    display: block; 
+    width: 100%;
+    height: auto;
+  }
