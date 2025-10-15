@@ -7,7 +7,7 @@ import { supabase } from "./supabaseClient";
 import { checkSession } from "./store/authSlice";
 import AuthPage from "./pages/AuthPage/AuthPage";
 import MainLayout from "./Layouts/MainLayout/MainLayout";
-
+import Dashboard from "./pages/Dashboard/Dashboard";
 function App() {
   return (
     <Routes>
@@ -15,7 +15,9 @@ function App() {
         <Route index element={<LandingPage />} />
         <Route path="auth" element={<AuthPage />} />
       </Route>
-      <Route path="mainpage" element={<MainLayout />} />
+      <Route path="mainpage" element={<MainLayout />}>
+        <Route index element={<Dashboard />} />
+      </Route>
     </Routes>
   );
 }
