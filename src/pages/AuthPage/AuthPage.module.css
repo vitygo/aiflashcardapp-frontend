@@ -1,4 +1,12 @@
 
+.mainTitle{
+    font-size: 1.625rem;
+}
+.authSubtitle{
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+}
+
 
 .authPage{
     margin-top: 10rem;
@@ -15,6 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5px;
     height: 3rem;
     padding: 0.1rem 0.4rem;
     margin-bottom: 2rem;
@@ -25,7 +34,8 @@
     height: 80%;
     color: rgba(74, 74, 74, 0.455);
     width: 50%;
-    transition: 0.3s ease;
+    transition: 0.2s ease;
+    font-size: 0.9375rem;
     
 }
 
@@ -41,21 +51,29 @@
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    gap: 1rem;
 
 
   }
 
+  label{
+    margin-bottom: 0.375rem;
+    text-align: left;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-left: 0 auto;
+    color: #444444;
+  }
+
 .inputField{
     background: rgba(0, 0, 0, 0.223);
-    border-radius: 14px;
+    border-radius: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 3rem;
     padding: 0.1rem 0.4rem;
     border: none;
-    width: 85%;
+    width: 100%;
     outline: none;
 
 }
@@ -65,61 +83,78 @@
     display: flex;
     justify-content: center;
 }
-.authSubtitle{
-    margin-bottom: 2rem;
-}
+
 
 .submitButton{
-    background: linear-gradient(80deg, rgba(89, 131, 252, 1) 16%, rgba(169, 41, 136, 1) 100%);
+    background: linear-gradient(to right, #4a69ff, #9f49ff, #e746b1, #ff3870);
     color: white; 
     border-radius: 12px;
     padding: 0.5rem 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 0rem;
+    width: 85%;
+    font-size: 	1rem;
+}
+
+input{
+    font-size: 1rem;
+
+}
+
+.inputGroup{
+    margin-bottom: 1.25rem;
     width: 85%;
 }
 
-@media(min-width: 1024px){
-
-    .authButtons{
-        width: 30%;
-
+@media(min-width: 768px){
+    .inputGroup{
+        margin-bottom: 1.25rem;
     }
-     .submitButton, .inputField{
-        width: 90%;
-    
-    }
-
-    .loginForm, .signInForm{
-        background: white;
-       border-radius: 14px;
-       width: 30%;
-       padding: 5% 0;
-       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    
-    
-      }
-
-
-
-}
-
-@media(min-width: 1025px){
     .authButtons{
         width: 50%;
 
     }
      .submitButton, .inputField{
-        width: 90%;
+    
+    }
+   
+
+    .loginForm, .signInForm{
+     display: flex; 
+     justify-content: center;
+        
+       background: white;
+       border-radius: 14px;
+       width: 50%;
+       padding: 5% 0;
+       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+    
+      }
+      input{
+        width: 100%;
+    }
+
+
+}
+
+
+@media(min-width: 1025px){
+    .authButtons{
+        width: 43%;
+
+    }
+     .submitButton, .inputField{
+
     
     }
 
     .loginForm, .signInForm{
 
         border-radius: 14px;
-        width: 50%;
+        width: 43%;
         padding: 5% 0;
         background: white;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

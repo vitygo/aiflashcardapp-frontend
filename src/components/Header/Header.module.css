@@ -83,7 +83,7 @@ button{
 }
 
 .signUpButton{
-    background: linear-gradient(80deg, rgba(89, 131, 252, 1) 16%, rgba(169, 41, 136, 1) 100%);
+    background: linear-gradient(to right, #4a69ff, #9f49ff, #e746b1, #ff3870);
     color: white;
     height: 90%;
     padding: 1rem;
@@ -97,12 +97,13 @@ button{
 
 .buttons{
     padding: 0.2rem;
-    border: 1px solid rgba(0, 0, 0, 0.258);
+    /* border: 1px solid rgba(0, 0, 0, 0.258); */
     background: white;
     border-radius: 12px;
-    display: flex;
+
     align-items: center;
     height: 53px;
+    display: none !important;
 
 }
 
@@ -120,8 +121,26 @@ button{
 
 }
 
+.logoImage{
+    height: 3rem;
+   
+}
+
+.logoText{
+    font-weight: 500;
+    color:#000000;
+
+
+
+
+}
 
 @media (min-width: 1025px){
+    .buttons{
+        display: flex !important;
+       
+    
+    }
     .headerMenu{
         position: static;
         display: flex;
@@ -133,7 +152,7 @@ button{
         border-top:none;
         height: 100%;
         padding: 1rem;
-        border: 1px solid rgba(0, 0, 0, 0.258);
+        /* border: 1px solid rgba(0, 0, 0, 0.258); */
         border-radius: 12px;
 
     
@@ -155,7 +174,8 @@ button{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 2% 25%;
+        padding: 2% 20%;
+        gap: 5rem;
         
     }
     .leftHeader{

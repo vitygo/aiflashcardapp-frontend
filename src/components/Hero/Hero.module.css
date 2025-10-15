@@ -11,7 +11,7 @@
 
 .ctaButton{
     font-size: 1.2rem;
-    background: linear-gradient(80deg, rgba(89, 131, 252, 1) 16%, rgba(169, 41, 136, 1) 100%);
+    background: linear-gradient(to right, #4a69ff, #9f49ff, #e746b1, #ff3870);
     color: white; 
     border-radius: 12px;
     padding: 1rem;
@@ -22,19 +22,46 @@
     width: 12rem;
 }
 
-.heroTitle{
 
+.heroTitle{
+    margin-top: 1rem;
+    font-size: 2.5rem
 }
 .heroSubTitle{
+    margin-top: 0.75rem;
     color: rgba(0, 0, 0, 0.622);
-    font-size: 1.1rem;
+    font-size: 1.0rem;
+    width: 60%;
 
 }
 
 .heroButtonSubTitle{
     color: rgba(0, 0, 0, 0.513);
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
 
 }
+
+.badge{
+    padding: 0.5rem 0.8rem;
+    background: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 12px;
+    border: 1px solid rgba(128, 128, 128, 0.457);
+    background: linear-gradient(to right, #4a69ff, #9f49ff, #e746b1, #ff3870);
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+    font-size: 0.8125rem;
+}
+
+h1 span{
+    background: linear-gradient(to right, #4a69ff, #9f49ff, #e746b1, #ff3870);
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+}
+
 
 @media (min-width: 601px){
     .heroTitle{
@@ -70,9 +97,34 @@
 
 @media (min-width: 1025px){
     .heroTitle{
-        font-size: 3.3rem;
+        font-size: 3.5rem;
         max-width: 70%;
+        margin-top: 1rem;
 
     }
+
+    .heroSubTitle{
+        margin-top: 0.75rem;
+        color: rgba(0, 0, 0, 0.622);
+        font-size: 1.125rem;
+        width: 60%;
+    
+    }
+    
+    .heroButtonSubTitle{
+        color: rgba(0, 0, 0, 0.513);
+        font-size: 0.875rem;
+        margin-top: 0.5rem;
+    
+    }
+    .badge{
+        font-size: 0.875rem;
+        
+    }
+    .ctaButton{
+        font-size: 1.125rem;
+    }
+
+
     
 }
