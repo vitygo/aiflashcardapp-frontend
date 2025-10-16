@@ -2,6 +2,8 @@ import styles from "./Dashboard.module.css";
 import { useOutletContext } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import { FaSearch } from "react-icons/fa";
+import { IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
 
 export default function Dashboard() {
   const { sidebarOpen, setSidebarOpen } = useOutletContext();
@@ -22,6 +24,19 @@ export default function Dashboard() {
             placeholder="Search your set"
           />
           <FaSearch size="26px" />
+        </div>
+        <div className={styles.userContainer}>
+          <div className={styles.userData}>
+            <div className={styles.userImage}>
+              <img
+                className={styles.userAvatar}
+                src="./betaavatar.png"
+                alt="avatar"
+              />
+            </div>
+            <p className={styles.userName}>Bob Nowak</p>
+          </div>
+          <IoIosArrowDown />
         </div>
       </div>
       <div className={styles.dashboardBody}></div>
