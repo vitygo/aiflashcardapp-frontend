@@ -4,7 +4,8 @@ import { IoMenu } from "react-icons/io5";
 import { FaSearch } from "react-icons/fa";
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
-
+import { Routes, Route } from "react-router-dom";
+import Home from "../../components/Home/Home";
 export default function Dashboard() {
   const { sidebarOpen, setSidebarOpen } = useOutletContext();
 
@@ -39,7 +40,11 @@ export default function Dashboard() {
           <IoIosArrowDown />
         </div>
       </div>
-      <div className={styles.dashboardBody}></div>
+      <div className={styles.dashboardBody}>
+        <Routes>
+          <Route index element={<Home />} />
+        </Routes>
+      </div>
     </div>
   );
 }
